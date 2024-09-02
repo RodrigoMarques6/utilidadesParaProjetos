@@ -1,36 +1,36 @@
 <div class="w-full">
-    <mat-form-field class="w-full">
-      <mat-label class="font-bold">Cor antiga</mat-label>
+  <mat-form-field class="w-full">
+    <mat-label class="font-bold">Cor antiga</mat-label>
 
-      <input
-        type="text"
-        [value]="color1"
-        (input)="updateColorFromInput($event, 'color1')"
-        maxlength="7"
-        matInput
-      />
-      <input
-        type="color"
-        id="colorPicker1"
-        [value]="color1"
-        (input)="updateColorFromPicker($event, 'color1')"
-      />
-    </mat-form-field>
-    <mat-form-field class="w-full">
-      <mat-label class="font-bold">Cor nova</mat-label>
+    <input
+      type="text"
+      [value]="color1"
+      (input)="updateColorFromInput($event, 'color1')"
+      maxlength="7"
+      matInput
+    />
+    <input
+      type="color"
+      id="colorPicker1"
+      [value]="color1"
+      (input)="updateColorFromPicker($event, 'color1')"
+    />
+  </mat-form-field>
+  <mat-form-field class="w-full">
+    <mat-label class="font-bold">Cor nova</mat-label>
 
-      <input
-        type="text"
-        [value]="color2"
-        (input)="updateColorFromInput($event, 'color2')"
-        maxlength="7"
-        matInput
-      />
-      <input
-        type="color"
-        id="colorPicker2"
-        [value]="color2"
-        (input)="updateColorFromPicker($event, 'color2')"
-      />
-    </mat-form-field>
-  </div>
+    <input
+      type="text"
+      [value]="color2"
+      (input)="updateColorFromInput($event, 'color2')"
+      maxlength="7"
+      matInput
+    />
+    <input
+      type="color"
+      id="colorPicker2"
+      [value]="color2"
+      (input)="updateColorFromPicker($event, 'color2')"
+    />
+  </mat-form-field>
+</div>
