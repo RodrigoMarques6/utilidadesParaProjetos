@@ -1,1 +1,11 @@
-<p>character-counter works!</p>
+<mat-form-field class="area" floatLabel="always">
+  <mat-label>Depoimento</mat-label>
+  <textarea
+    matInput
+    rows="5"
+    placeholder="Informe o depoimento"
+    formControlName="brief"
+    (input)="updateCharCount($event)"
+  ></textarea>
+</mat-form-field>
+<div>{{ charCount }} caracteres digitados</div>
