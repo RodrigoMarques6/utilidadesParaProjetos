@@ -4,6 +4,7 @@ import { SelectColorComponent } from './components/select-color/select-color.com
 import { CharacterCounterComponent } from './components/character-counter/character-counter.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MenuComponent } from './components/menu/menu.component';
+import { MainComponent } from './components/main/main.component';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,7 @@ import { MenuComponent } from './components/menu/menu.component';
     CharacterCounterComponent,
     FooterComponent,
     MenuComponent,
+    MainComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
