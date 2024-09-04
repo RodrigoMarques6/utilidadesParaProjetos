@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { SelectColorComponent } from './components/select-color/select-color.component';
 import { CharacterCounterComponent } from './components/character-counter/character-counter.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -15,7 +15,8 @@ import { MainComponent } from './components/main/main.component';
     CharacterCounterComponent,
     FooterComponent,
     MenuComponent,
-    MainComponent
+    MainComponent,
+    RouterModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
