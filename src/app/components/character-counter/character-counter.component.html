@@ -1,11 +1,14 @@
-<mat-form-field class="area" floatLabel="always">
-  <mat-label>Digite seu texto:</mat-label>
-  <textarea
-    matInput
-    rows="5"
-    placeholder="Seu texto aqui"
-    formControlName="brief"
-    (input)="updateCharCount($event)"
-  ></textarea>
-</mat-form-field>
-<div>{{ charCount }} caracteres digitados</div>
+<section class="p-4 sm:p-16 md:p-16 lg:p-16 xl:p-16">
+  <mat-form-field floatLabel="always">
+    <mat-label>Digite seu texto:</mat-label>
+    <textarea
+      class="w-full"
+      matInput
+      rows="5"
+      placeholder="Seu texto aqui"
+      formControlName="brief"
+      (input)="updateCharCount($event)"
+    ></textarea>
+  </mat-form-field>
+  <div>{{ charCount }} caracteres digitados</div>
+</section>
