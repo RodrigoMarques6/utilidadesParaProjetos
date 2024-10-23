@@ -1,4 +1,4 @@
-# Utilidades
+# Projeto Utilidades
 
 ## Bem vindo ao projeto utilidades. Aqui, vou compartilhando códigos úteis simples de Front End, do dia a dia de programação para utilização no futuro, caso precise.
 
