@@ -5,8 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './like-repos.component.html',
-  styleUrl: './like-repos.component.css'
+  styleUrl: './like-repos.component.css',
 })
-export class LikeReposComponent {
-
-}
+export class LikeReposComponent {}
