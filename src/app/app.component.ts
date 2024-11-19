@@ -7,7 +7,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { MainComponent } from './components/main/main.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { MatIconModule } from '@angular/material/icon';
-
+import { PulseButtonComponent } from './components/pulse-button/pulse-button.component';
 
 @Component({
   selector: 'app-root',
@@ -17,11 +17,12 @@ import { MatIconModule } from '@angular/material/icon';
     CarouselComponent,
     SelectColorComponent,
     CharacterCounterComponent,
+    PulseButtonComponent,
     FooterComponent,
     MenuComponent,
     MainComponent,
     RouterModule,
-    MatIconModule
+    MatIconModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

@@ -5,6 +5,7 @@ import { CharacterCounterComponent } from './components/character-counter/charac
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { SidebarRightComponent } from './components/sidebar-right/sidebar-right.component';
 import { LikeReposComponent } from './components/like-repos/like-repos.component';
+import { PulseButtonComponent } from './components/pulse-button/pulse-button.component';
 
 export const routes: Routes = [
   { path: '', component: MainComponent },
@@ -13,4 +14,5 @@ export const routes: Routes = [
   { path: 'carrossel', component: CarouselComponent },
   { path: 'menu-lateral-direito', component: SidebarRightComponent },
   { path: 'repositorios-uteis', component: LikeReposComponent },
+  { path: 'botao-animado', component: PulseButtonComponent },
 ];
