@@ -8,6 +8,7 @@ import { MainComponent } from './components/main/main.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { MatIconModule } from '@angular/material/icon';
 import { PulseButtonComponent } from './components/pulse-button/pulse-button.component';
+import { FadeInComponent } from './components/fade-in/fade-in.component';
 
 @Component({
   selector: 'app-root',
@@ -23,6 +24,7 @@ import { PulseButtonComponent } from './components/pulse-button/pulse-button.com
     MainComponent,
     RouterModule,
     MatIconModule,
+    FadeInComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

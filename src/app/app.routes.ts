@@ -6,6 +6,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { SidebarRightComponent } from './components/sidebar-right/sidebar-right.component';
 import { LikeReposComponent } from './components/like-repos/like-repos.component';
 import { PulseButtonComponent } from './components/pulse-button/pulse-button.component';
+import { FadeInComponent } from './components/fade-in/fade-in.component';
 
 export const routes: Routes = [
   { path: '', component: MainComponent },
@@ -15,4 +16,5 @@ export const routes: Routes = [
   { path: 'menu-lateral-direito', component: SidebarRightComponent },
   { path: 'repositorios-uteis', component: LikeReposComponent },
   { path: 'botao-animado', component: PulseButtonComponent },
+  { path: 'animação-fade-in', component: FadeInComponent },
 ];
