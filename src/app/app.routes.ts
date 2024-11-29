@@ -7,6 +7,7 @@ import { SidebarRightComponent } from './components/sidebar-right/sidebar-right.
 import { LikeReposComponent } from './components/like-repos/like-repos.component';
 import { PulseButtonComponent } from './components/pulse-button/pulse-button.component';
 import { FadeInComponent } from './components/fade-in/fade-in.component';
+import { MapsGoogleComponent } from './components/maps-google/maps-google.component';
 
 export const routes: Routes = [
   { path: '', component: MainComponent },
@@ -17,4 +18,5 @@ export const routes: Routes = [
   { path: 'repositorios-uteis', component: LikeReposComponent },
   { path: 'botao-animado', component: PulseButtonComponent },
   { path: 'animação-fade-in', component: FadeInComponent },
+  { path: 'mapa-incorporado', component: MapsGoogleComponent },
 ];
