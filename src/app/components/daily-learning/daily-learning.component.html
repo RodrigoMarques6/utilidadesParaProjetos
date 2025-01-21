@@ -11,3 +11,35 @@
     3, 4, 5, 6]
   </code>
 </div>
+
+<div>
+  <h1>RxJS</h1>
+  <p>
+    <b>pipe:</b> É usado em Observables do RxJS. Ele permite encadear operadores
+    para transformar, filtrar, ou manipular os dados emitidos por um Observable.
+    O resultado final é um novo Observable modificado. O pipe é o ponto onde
+    você define a lógica para manipular os valores emitidos pelo Observable
+  </p>
+  <p>
+    <b>switchMap:</b>É um operador para ser utilizado dentro do .pipe. É
+    projetado para lidar com fluxos assíncronos e trocar o Observable por um
+    novo Observable. Cancela qualquer Observable anterior se um novo valor for
+    emitido, garantindo que apenas o último Observable seja considerado. Ideal
+    para evitar situações de sobreposição de chamadas, como múltiplas
+    requisições HTTP que não precisam ser processadas ao mesmo tempo.
+  </p>
+  <p>
+    <b>tap:</b>É usado para executar efeitos colaterais (side effects) em cada
+    emissão de um Observable sem alterar os valores emitidos ou interromper o
+    fluxo de dados. Ele é útil para realizar ações como logging, debugar,
+    rastrear eventos ou disparar comportamentos sem modificar o fluxo.
+    <b>Só pode ser usado dentro do pipe.</b>
+  </p>
+  <p>
+    <b>of:</b>Cria um Observable que emite os valores fornecidos na ordem em que
+    foram passados e então completa. É usado para criar Observables rapidamente,
+    simular fluxos de dados em testes e emitir alores simples no início de uma
+    cadeira de operadores. Ele simula métodos que retornam Observables, por isso
+    a utilização é ampliada em testes.
+  </p>
+</div>
