@@ -8,6 +8,7 @@ import { LikeReposComponent } from './components/like-repos/like-repos.component
 import { PulseButtonComponent } from './components/pulse-button/pulse-button.component';
 import { FadeInComponent } from './components/fade-in/fade-in.component';
 import { MapsGoogleComponent } from './components/maps-google/maps-google.component';
+import { DailyLearningComponent } from './components/daily-learning/daily-learning.component';
 
 export const routes: Routes = [
   { path: '', component: MainComponent },
@@ -19,4 +20,5 @@ export const routes: Routes = [
   { path: 'botao-animado', component: PulseButtonComponent },
   { path: 'animação-fade-in', component: FadeInComponent },
   { path: 'mapa-incorporado', component: MapsGoogleComponent },
+  { path: 'aprendizado-diario', component: DailyLearningComponent },
 ];

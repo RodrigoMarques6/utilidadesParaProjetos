@@ -9,6 +9,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { MatIconModule } from '@angular/material/icon';
 import { PulseButtonComponent } from './components/pulse-button/pulse-button.component';
 import { FadeInComponent } from './components/fade-in/fade-in.component';
+import { DailyLearningComponent } from './components/daily-learning/daily-learning.component';
 
 @Component({
   selector: 'app-root',
@@ -25,6 +26,7 @@ import { FadeInComponent } from './components/fade-in/fade-in.component';
     RouterModule,
     MatIconModule,
     FadeInComponent,
+    DailyLearningComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
