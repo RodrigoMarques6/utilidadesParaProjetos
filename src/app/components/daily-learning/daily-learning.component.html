@@ -42,4 +42,86 @@
     cadeira de operadores. Ele simula métodos que retornam Observables, por isso
     a utilização é ampliada em testes.
   </p>
+  <h2>Arquitetura Serverless</h2>
+  <h1>1. Lambdas</h1>
+  <p>
+    Funções Lambda (AWS Lambda) são blocos de código que rodam na nuvem sem
+    precisar configurar servidores.
+  </p>
+  <p>
+    Você escreve uma função e a AWS cuida da execução, escalabilidade e cobrança
+    só pelo tempo usado.
+  </p>
+  <p>Exemplo: Uma função que roda quando um arquivo é enviado para o S3.</p>
+
+  <h2>Serverless.env.yml</h2>
+  <p>
+    Define variáveis de ambiente usadas pelas funções (ex: senhas, nomes de
+    filas).
+  </p>
+  <p>Ajuda a manter configurações separadas do código.</p>
+
+  <h2>Serverless.func.yml</h2>
+  <p>
+    Define funções Lambda: nome, onde está o código, e como são acionadas (ex:
+    por API, evento, fila).
+  </p>
+  <br />
+  <code>
+    <pre>
+hello:
+    handler: handler.hello
+    events:
+      - http:
+          path: hello
+          method: get</pre
+    ></code
+  ><br />
+  <h2>Serverless.resources.yml</h2>
+  <p>
+    Define recursos AWS adicionais que serão criados (filas SQS, buckets S3,
+    tabelas DynamoDB etc.).
+  </p>
+  <br />
+  <code>
+    <pre>
+      Resources:
+  MyQueue:
+    Type: AWS::SQS::Queue
+
+    </pre></code
+  ><br />
+  <h2>Serverless.yml</h2>
+  <p>
+    É o arquivo principal. Liga tudo: funções, eventos, plugins, variáveis,
+    recursos.
+  </p>
+  <p>O Serverless Framework usa esse arquivo para montar sua aplicação.</p>
+
+  <h2>Filas</h2>
+  <p>São listas de mensagens onde produtores colocam mensagens e consumidores pegam.</p>
+  <p>Evita perder dados quando o sistema está ocupado. Permite processamento assíncrono.</p>
+
+  <h2>SQS (Simple Queue Service)</h2>
+  <p>Serviço de fila da AWS.
+
+    Você envia mensagens para ela, e outras partes do sistema processam depois.</p>
+    <p>Serviço da AWS que implementa filas (mensagens são guardadas e processadas depois).</p>
+    <p>Exemplo prático: Uma Lambda lê mensagens da SQS e processa pagamentos.</p>
+
+    <h2>SNS (Simple Notification Service)</h2>
+    <p>Serviço de publicação/assinatura.
+
+      Um evento é publicado, e vários destinos (email, SMS, Lambda, etc.) recebem a notificação.</p>
+      <p>Serviço da AWS que implementa publicação/assinatura (mensagens são enviadas a vários destinos ao mesmo tempo).</p>
+      <p>Exemplo prático: Um novo cadastro envia notificação para e-mail e SMS via SNS.</p>
+
+      <h2>DLQ (Dead Letter Queue)</h2>
+      <p>Fila especial onde vão mensagens que falharam várias vezes no processamento.</p>
+      <p>Ajuda na análise de erros sem perder mensagens.</p>
+
+      <h4>Em resumo:</h4>
+      <p>✅ SQS = Fila para tarefas como pagamentos, e-mails, pedidos, etc.
+        ✅ SNS = Serviço de notificação que dispara mensagens para vários destinos.
+        ✅ DLQ = Fila onde vão mensagens com erro para reprocessamento ou análise.</p>
 </div>
